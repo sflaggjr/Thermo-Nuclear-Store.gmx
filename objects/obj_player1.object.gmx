@@ -33,7 +33,9 @@ grav = 0.5;
 jump_speed = 10.0;
 max_grav = 10.0;
 current_floor = 1;
-
+//Player State
+p1_facing = p1_right;
+p1_state = undefined;
 
 </string>
           </argument>
@@ -77,6 +79,15 @@ if place_meeting(x, y + 1, obj_wall)
 move = key_left + key_right;
 hspd = move * move_speed;
 
+//update player facing based on keyboard inputs
+if key_left = -1
+    {
+        p1_facing = p1_left;
+    }
+else if key_right = 1
+    {
+        p1_facing = p1_right;
+    }
 
 //horizontal collision
 if place_meeting(x + hspd, y, obj_wall)
@@ -119,7 +130,7 @@ if place_meeting (x + hspd, y, obj_part1)
             }
         obj_controller.alarm[0] = 30;
     }
-    
+//Elevator INTERaction    
 if place_meeting(x, y, obj_elevator)
     {
         if key_up = 1 &amp;&amp; current_floor = 1
@@ -165,7 +176,16 @@ if place_meeting(x, y, obj_elevator)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>//Wrap if you're outside of the room
+if p1_facing = p1_right
+    {
+        x = 10;
+    }
+else if p1_facing = p1_left
+    {
+        x = 1000;
+    }
+</string>
           </argument>
         </arguments>
       </action>
@@ -189,6 +209,17 @@ if place_meeting(x, y, obj_elevator)
             <kind>1</kind>
             <string>draw_self();
 draw_text(x, y, current_floor);
+
+if p1_facing = p1_left
+    {
+        draw_text(x + 32, y, "Left");
+    }
+else if p1_facing = p1_right
+    {
+        draw_text(x + 32, y, "Right");
+    }
+    
+
 </string>
           </argument>
         </arguments>
