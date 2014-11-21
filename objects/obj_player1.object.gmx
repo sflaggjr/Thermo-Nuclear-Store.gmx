@@ -179,11 +179,11 @@ if place_meeting(x, y, obj_elevator)
             <string>//Wrap if you're outside of the room
 if p1_facing = p1_right
     {
-        x = 10;
+        x = 0;
     }
 else if p1_facing = p1_left
     {
-        x = 1000;
+        x = 1024;
     }
 </string>
           </argument>
