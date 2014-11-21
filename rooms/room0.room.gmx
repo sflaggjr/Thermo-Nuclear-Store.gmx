@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_wall" x="512" y="736" name="inst_AA15F59F" locked="0" code="" scaleX="32.25" scaleY="1.80999994277954" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player1" x="217" y="691" name="inst_8CEE425A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player1" x="192" y="672" name="inst_8CEE425A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="0" name="inst_234EA8C7" locked="0" code="" scaleX="32.25" scaleY="1.80999994277954" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="512" name="inst_D7B27569" locked="0" code="" scaleX="32.25" scaleY="1.80999994277954" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="512" y="256" name="inst_D5A78B1B" locked="0" code="" scaleX="32.25" scaleY="1.80999994277954" colour="4294967295" rotation="0"/>
