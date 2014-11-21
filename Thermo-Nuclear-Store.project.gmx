@@ -25,6 +25,7 @@
   <objects name="objects">
     <object>objects\obj_wall</object>
     <object>objects\obj_player1</object>
+    <object>objects\obj_player2</object>
     <object>objects\obj_controller</object>
     <object>objects\obj_part1</object>
     <object>objects\obj_elevator</object>
