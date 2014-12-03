@@ -208,7 +208,8 @@ else if p2_facing = p2_left
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if p2_facing = p2_left
+            <string>draw_self();
+if p2_facing = p2_left
     {
        /* draw_sprite(spr_player1_left, image_index, x, y,);
         draw_text(x + 32, y, "Left");*/
